@@ -26,9 +26,23 @@ function getcss(done) {
     done();
 }
 
+function images(done) {
+    gulp.src('./src/img/**/*.{jpg, webp, svg, avi}')
+        .pipe(gulp.dest('./dist/img'));
+
+    done();
+}
+
 function javascript(done) {
     gulp.src('./src/js/**/*.js')
         .pipe(gulp.dest('./dist/js'));
+
+    done();
+}
+
+function fonts(done) {
+    gulp.src('./src/fonts/**/*.{woff2,woff,otf,ttf}')
+        .pipe(gulp.dest('./dist/fonts'));
 
     done();
 }
@@ -37,7 +51,9 @@ gulp.task('default', gulp.series(
     deleteall,
     html,
     getcss,
-    javascript
+    images,
+    javascript,
+    fonts
     ));
 
 gulp.task(getcss);
