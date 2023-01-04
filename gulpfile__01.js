@@ -14,15 +14,6 @@ function deleteall(done) {
 
 function html(done) {
     gulp.src('./src/**.html')
-        .pipe(fileinclude())
-        .pipe(replace(/@img\//g, 'img/'))
-        .pipe(webpHtmlNoSvg())
-        .pipe(replace(/@img\//g, 'img/'))
-        .pipe(webpHtmlNoSvg())
-        .pipe(htmlmin({
-            collapseWhitespace: true,
-            removeComments: true
-        }))
         .pipe(gulp.dest('./dist'));
 
     done();
@@ -57,10 +48,12 @@ function fonts(done) {
 }
 
 gulp.task('default', gulp.series(
-    // deleteall,
+    deleteall,
     html,
     getcss,
     images,
     javascript,
     fonts
     ));
+
+gulp.task(getcss);
