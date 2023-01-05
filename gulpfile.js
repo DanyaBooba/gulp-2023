@@ -34,6 +34,13 @@ function html(done) {
         }))
         .pipe(gulp.dest('./dist'))
         .pipe(gulp.src('./src/games/**/*.html'))
+        .pipe(fileinclude())
+        .pipe(replace(/@img\//g, 'img/'))
+        .pipe(webpHtmlNoSvg())
+        .pipe(htmlmin({
+            collapseWhitespace: true,
+            removeComments: true
+        }))
         .pipe(gulp.dest('./dist/games'));
 
     done();
@@ -97,6 +104,13 @@ function compressImages(done) {
     done();
 }
 
+function anotherFolders(done) {
+    gulp.src('./src/.htaccess')
+        .pipe(gulp.dest('./dist'));
+
+    done();
+}
+
 function getserve(done) {
     sync.init({
         server: './dist'
@@ -106,6 +120,7 @@ function getserve(done) {
     gulp.watch('./src/img/**/*', gulp.series(images)).on('change', sync.reload);
     gulp.watch('./src/css/**/*', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/js/**/*.js', gulp.series(javascript)).on('change', sync.reload);
+    gulp.watch('./src/.htaccess', gulp.series(anotherFolders)).on('change', sync.reload);
 
     done();
 }
@@ -115,6 +130,7 @@ gulp.task('default', gulp.series(
     getcss,
     images,
     javascript,
+    anotherFolders,
     getserve
 ));
 
@@ -122,7 +138,8 @@ gulp.task('build', gulp.series(
     html,
     getcss,
     images,
-    javascript
+    javascript,
+    anotherFolders
 ));
 
 gulp.task('compress', gulp.series(
@@ -130,7 +147,8 @@ gulp.task('compress', gulp.series(
     getcss,
     compressImages,
     compressFonts,
-    javascript
+    javascript,
+    anotherFolders
 ));
 
 gulp.task('serve', gulp.series(
@@ -138,5 +156,6 @@ gulp.task('serve', gulp.series(
     getcss,
     images,
     javascript,
+    anotherFolders,
     getserve
 ));
