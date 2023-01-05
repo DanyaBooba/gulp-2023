@@ -98,7 +98,7 @@ function getserve(done) {
         server: './dist'
     });
 
-    gulp.watch('./src/*.html', gulp.series(html)).on('change', sync.reload);
+    gulp.watch('./src/**/*.html', gulp.series(html)).on('change', sync.reload);
     gulp.watch('./src/img/**/*', gulp.series(images)).on('change', sync.reload);
     gulp.watch('./src/css/**/*.css', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/js/**/*.js', gulp.series(javascript)).on('change', sync.reload);

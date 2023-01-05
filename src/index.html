@@ -4,13 +4,17 @@
     "title": "Главная страница"
 })
 <body>
-    @@include('parts/header.html', {})
-    <!-- 123 -->
-    <h1>Главная страница</h1>
-    <p>
-        Параграф
-    </p>
-    <img src="@img/file.jpg" alt="">
-    @@include('parts/footer.html', {})
+    @@include('parts/header.html', {
+
+    })
+    <main class="container">
+        <h1>Main page</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, dolores?
+        </p>
+    </main>
+    @@include('parts/footer.html', {
+
+    })
 </body>
 </html>
