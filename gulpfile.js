@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var del = require('del');
 
 var htmlmin = require('gulp-htmlmin');
 var fileinclude = require('gulp-file-include');
@@ -17,12 +16,6 @@ var ttf2woff2 = require('gulp-ttf2woff2');
 
 var webp = require('gulp-webp');
 var imagemin = require('gulp-imagemin');
-
-// function deleteall(done) {
-//     del('./dist/**/*');
-
-//     done();
-// }
 
 function html(done) {
     gulp.src('./src/**.html')
