@@ -3,6 +3,14 @@
 @@include('parts/head.html', {
     "title": "Главная страница"
 })
+<style>
+    .logo--1 {
+        border-radius: 16px;
+    }
+    .game--text{
+        color: #555;
+    }
+</style>
 <body>
     @@include('parts/header.html', {
 
@@ -43,16 +51,34 @@
                 Хиты сейчас
             </h2>
 
-            <div class="d-flex flex-wrap">
+            <div class="d-flex flex-wrap mb-3">
                 <div class="col-md-7 me-auto">
-                    text
+                    <div class="d-flex flex-wrap flex-column">
+                        <h3 class="display-5">
+                            Babka On The Hunt: <nobr>2D Классика</nobr>
+                        </h3>
+                        <p class="mb-0 fs-4 game--text">
+                            Играй за <span class="text-dark">русскую</span> бабушку.
+                        </p>
+                        <p class="fs-4 mb-0 game--text">
+                            Путешествуй по <span class="text-dark">российским</span> локациям.
+                        </p>
+                        <p class="fs-4 mb-0 game--text">
+                            Помоги пройти <span class="text-dark">все</span> уровни!
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div>
-                        <img src="@img/games/bothnew/l.jpg" width="128" height="128" alt="Логотип игры Babka On The Hunt: 2D Классика">
+                        <a href="#">
+                            <img src="@img/games/bothnew/l.jpg" width="256" height="256" class="logo--1"
+                                alt="Логотип игры Babka On The Hunt: 2D Классика">
+                        </a>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </main>
 
