@@ -11,6 +11,8 @@ var csso = require('gulp-csso');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
 
+var uglify = require('gulp-uglify');
+
 // function deleteall(done) {
 //     del('./dist/**/*');
 
@@ -35,8 +37,8 @@ function getcss(done) {
     gulp.src('./src/css/**/*.css')
         .pipe(autoprefixer())
         .pipe(csso())
-        .pipe(cssmin())
         .pipe(concatCss('index.css'))
+        .pipe(cssmin())
         .pipe(gulp.dest('./dist/css'));
 
     done();
@@ -51,6 +53,7 @@ function images(done) {
 
 function javascript(done) {
     gulp.src('./src/js/**/*.js')
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 
     done();
@@ -89,6 +92,5 @@ gulp.task('serve', gulp.series(
     html,
     getcss,
     images,
-    javascript,
-    fonts
+    javascript
 ));

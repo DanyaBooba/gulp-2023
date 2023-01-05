@@ -1,0 +1,1 @@
+var c=123;function Optimization(){}console.log("123");
