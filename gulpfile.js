@@ -13,6 +13,8 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var uglify = require('gulp-uglify');
 
+var ttf2woff2 = require('gulp-ttf2woff2');
+
 // function deleteall(done) {
 //     del('./dist/**/*');
 
@@ -60,7 +62,10 @@ function javascript(done) {
 }
 
 function compressFonts(done) {
-    gulp.src('./src/fonts/**/*.{woff2,woff,otf,ttf}')
+    gulp.src('./src/fonts/**/*.ttf')
+        .pipe(ttf2woff2())
+        .pipe(gulp.dest('./dist/fonts'))
+        .pipe(gulp.src('./src/fonts/**/*.{otf,woff,woff2}'))
         .pipe(gulp.dest('./dist/fonts'));
 
     done();
