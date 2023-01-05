@@ -1,9 +1,25 @@
-.nav--link
+.nav--main
 {
-
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 60px;
 }
 
-.nav--link-active
+.nav--link
 {
+    color: #a9a9a9;
 
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav--link:hover
+{
+    color: #333333;
+}
+
+.nav--link-active, .nav--link-active:hover
+{
+    color: #000000;
+    text-decoration: none;
 }
