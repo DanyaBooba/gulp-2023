@@ -32,7 +32,9 @@ function html(done) {
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.src('./src/games/**/*.html'))
+        .pipe(gulp.dest('./dist/games'));
 
     done();
 }

@@ -3,18 +3,7 @@
 @@include('parts/head.html', {
     "title": "Главная страница"
 })
-<style>
-    .logo-game {
-        border-radius: 16px;
-    }
-    /* .logo-game--2 {
-
-    } */
-
-    .game--text{
-        color: #555;
-    }
-</style>
+<link rel="stylesheet" href="css/main-page.css">
 <body>
     @@include('parts/header.html', {
 
@@ -44,7 +33,7 @@
             </div>
         </div>
 
-        <div>
+        <div style="margin-bottom: 100px">
             <h2 class="display-6 mb-4 d-flex flex-wrap align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="dark" class="me-2"
                     viewBox="0 0 16 16">
@@ -94,13 +83,10 @@
                             Запомни эти карты
                         </h3>
                         <p class="mb-0 fs-4 game--text">
-                            Играй за <span class="text-dark">русскую</span> бабушку.
+                            Развивай свою <span class="text-dark">память</span>.
                         </p>
-                        <p class="fs-4 mb-0 game--text">
-                            Путешествуй по <span class="text-dark">российским</span> локациям.
-                        </p>
-                        <p class="fs-4 mb-0 game--text">
-                            Помоги пройти <span class="text-dark">все</span> уровни!
+                        <p class="fs-4 mb-3 game--text">
+                            <span class="text-dark">Разные</span> стили игры.
                         </p>
                         <div>
                             <a href="#" class="fs-4 link">
@@ -116,8 +102,8 @@
                 <div class="col-md-3">
                     <div>
                         <a href="#">
-                            <img src="@img/games/cards/l.jpg" width="256" height="256" class="logo-game logo-game--3"
-                                alt="Логотип игры Babka On The Hunt: 2D Классика">
+                            <img src="@img/games/cards/l.jpg" width="256" height="256" class="logo-game logo-game--2"
+                                alt="Логотип игры Запомни эти карты">
                         </a>
                     </div>
                 </div>
@@ -130,13 +116,10 @@
                             Sweetness
                         </h3>
                         <p class="mb-0 fs-4 game--text">
-                            Играй за <span class="text-dark">русскую</span> бабушку.
+                            <span class="text-dark">Спокойствие</span> доступно сейчас.
                         </p>
-                        <p class="fs-4 mb-0 game--text">
-                            Путешествуй по <span class="text-dark">российским</span> локациям.
-                        </p>
-                        <p class="fs-4 mb-0 game--text">
-                            Помоги пройти <span class="text-dark">все</span> уровни!
+                        <p class="fs-4 mb-3 game--text">
+                            <span class="text-dark">Идиллия</span> здесь.
                         </p>
                         <div>
                             <a href="#" class="fs-4 link">
@@ -152,8 +135,8 @@
                 <div class="col-md-3">
                     <div>
                         <a href="#">
-                            <img src="@img/games/bothnew/l.jpg" width="256" height="256" class="logo-game logo-game--4"
-                                alt="Логотип игры Babka On The Hunt: 2D Классика">
+                            <img src="@img/games/sweetness/l.jpg" width="256" height="256" class="logo-game logo-game--3"
+                                alt="Логотип игры Sweetness">
                         </a>
                     </div>
                 </div>
@@ -166,13 +149,13 @@
                             Крестики нолики
                         </h3>
                         <p class="mb-0 fs-4 game--text">
-                            Играй за <span class="text-dark">русскую</span> бабушку.
+                            Достаточно просто <span class="text-dark">запустить</span>.
                         </p>
                         <p class="fs-4 mb-0 game--text">
-                            Путешествуй по <span class="text-dark">российским</span> локациям.
+                            Выяви <span class="text-dark">победителя</span> в споре.
                         </p>
-                        <p class="fs-4 mb-0 game--text">
-                            Помоги пройти <span class="text-dark">все</span> уровни!
+                        <p class="fs-4 mb-3 game--text">
+                            До <span class="text-dark">нескольких</span> ходов.
                         </p>
                         <div>
                             <a href="#" class="fs-4 link">
@@ -188,13 +171,60 @@
                 <div class="col-md-3">
                     <div>
                         <a href="#">
-                            <img src="@img/games/bothnew/l.jpg" width="256" height="256" class="logo-game logo-game--2"
-                                alt="Логотип игры Babka On The Hunt: 2D Классика">
+                            <img src="@img/games/rps/l.jpg" width="256" height="256" class="logo-game logo-game--4"
+                                alt="Логотип игры Крестики нолики">
                         </a>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <div class="d-flex flex-wrap">
+            <div class="col-md-5 me-auto">
+                <div class="bg-light p-4" style="border-radius: 16px">
+                    <h5>Связаться сейчас</h5>
+                    <ul class="mb-0">
+                        <li>
+                            <a href="//t.me/ddybka" class="link--underline">
+                                телеграм
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//vk.com/ddybka" class="link--underline">
+                                вконтакте
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:daniil@creagoo.ru" class="link--underline">
+                                daniil@creagoo.ru
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="bg-light p-4" style="border-radius: 16px">
+                    <h5>Другие страницы</h5>
+                    <ul class="mb-0">
+                        <li>
+                            <a href="#" class="link--underline">
+                                политика конфиденциальности
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link--underline">
+                                условия использования
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="link--underline">
+                                обработка cookie-файлов
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </main>
 
