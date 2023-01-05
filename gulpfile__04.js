@@ -21,8 +21,6 @@ var concat = require('gulp-concat');
 
 var sync = require('browser-sync').create();
 
-// use php
-
 function html(done) {
     gulp.src('./src/**.html')
         .pipe(fileinclude())
