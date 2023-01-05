@@ -52,7 +52,7 @@ function getcss(done) {
 }
 
 function images(done) {
-    gulp.src('./src/img/**/*.{jpg, webp, svg, avi}')
+    gulp.src('./src/img/**/*')
         .pipe(gulp.dest('./dist/img'));
 
     done();
@@ -100,7 +100,7 @@ function getserve(done) {
 
     gulp.watch('./src/**/*.html', gulp.series(html)).on('change', sync.reload);
     gulp.watch('./src/img/**/*', gulp.series(images)).on('change', sync.reload);
-    gulp.watch('./src/css/**/*.css', gulp.series(getcss)).on('change', sync.reload);
+    gulp.watch('./src/css/**/*', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/js/**/*.js', gulp.series(javascript)).on('change', sync.reload);
 
     done();

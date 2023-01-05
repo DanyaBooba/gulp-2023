@@ -1,0 +1,36 @@
+.header--main {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.header--text {
+    font-size: 15px;
+}
+
+.header--locale-disable, .header--locale-disable:hover
+{
+    color: #a9a9a9 !important;
+    text-align: none;
+
+    border-bottom: .2rem #d9d9d9 double;
+}
+
+.header--locale-active
+{
+    color: #a9a9a9;
+    text-decoration: none;
+
+    border-bottom: .2rem #d9d9d9 solid;
+}
+
+.header--locale-active:hover {
+    color: #333333;
+    text-decoration: none;
+
+    border-bottom: .2rem #333333 solid;
+}
+
+.header--theme-icon
+{
+    margin: 0px 10px 0px 10px;
+}
