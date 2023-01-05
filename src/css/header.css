@@ -7,6 +7,12 @@
     font-size: 15px;
 }
 
+.header--locale
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .header--locale-disable, .header--locale-disable:hover
 {
     color: #a9a9a9 !important;
