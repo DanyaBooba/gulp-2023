@@ -15,6 +15,9 @@ var uglify = require('gulp-uglify');
 
 var ttf2woff2 = require('gulp-ttf2woff2');
 
+var webp = require('gulp-webp');
+var imagemin = require('gulp-imagemin');
+
 // function deleteall(done) {
 //     del('./dist/**/*');
 
@@ -72,7 +75,14 @@ function compressFonts(done) {
 }
 
 function compressImages(done) {
-    gulp.src('./src/img/**/*.{jpg, webp, svg, avi}')
+    gulp.src('./src/img/**/*.jpg')
+        .pipe(webp())
+        .pipe(gulp.src('./src/img/**/*.{jpg, jpeg, png, jfif, webp}'))
+        .pipe(imagemin({
+            progressive: true,
+            interlaced: true,
+            optimizationLevel: 3
+        }))
         .pipe(gulp.dest('./dist/img'));
 
     done();
