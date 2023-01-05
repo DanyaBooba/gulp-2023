@@ -41,11 +41,6 @@ function getcss(done) {
         .pipe(csso())
         .pipe(concatCss('index.css'))
         .pipe(cssmin())
-        .pipe(gulp.dest('./dist/css'))
-        .pipe(gulp.src('./src/_css/**/*.css'))
-        .pipe(autoprefixer())
-        .pipe(csso())
-        .pipe(cssmin())
         .pipe(gulp.dest('./dist/css'));
 
     done();
@@ -64,6 +59,7 @@ function javascript(done) {
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js'))
         .pipe(gulp.src('./src/js/not_compress/**/*.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('./dist/js'));
 
     done();

@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-@@include('parts/head.html')
+<html lang="ru">
+@@include('parts/head.html', {
+    "title": "Главная страница"
+})
 <body>
-    @@include('parts/header.html')
+    @@include('parts/header.html', {})
     <!-- 123 -->
-    <h1>Hi</h1>
+    <h1>Главная страница</h1>
+    <p>
+        Параграф
+    </p>
     <img src="@img/file.jpg" alt="">
-    @@include('parts/footer.html')
+    @@include('parts/footer.html', {})
 </body>
 </html>
