@@ -1,0 +1,21 @@
+:root {
+    --bg-color: #212121;
+    --text-color: #ffffff;
+    --image-shadow: rgba(0, 0, 0, .15);
+    --link-nothover: #a9a9a9;
+
+    /* buttons */
+    /* --button-icon: #ffffff; */
+    --invert: #ffffff;
+    --button-color: #7b7b7b;
+    --button-hover: #4f4f4f;
+    --button-click: #393939;
+
+    --dark-invert: #000000;
+    --dark-button-color: #a0a0a0;
+    --dark-button-hover: #7e7e7e;
+    --dark-button-click: #b2b2b2;
+
+    --search-border: #d3d4d5;
+    --hover-half: #d7d7d7;
+}

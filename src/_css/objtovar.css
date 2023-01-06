@@ -1,0 +1,60 @@
+body {
+    background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+i {
+    color: var(--text-color);
+}
+
+.btn-light {
+    --bs-btn-color: var(--invert);
+    --bs-btn-bg: var(--button-color);
+    --bs-btn-border-color: var(--button-color);
+    --bs-btn-hover-color: var(--invert);
+    --bs-btn-hover-bg: var(--button-hover);
+    --bs-btn-hover-border-color: var(--button-hover);
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: var(--button-click);
+    --bs-btn-active-border-color: var(--button-hover);
+}
+
+.btn-light .btn-icon {
+    fill: var(--invert);
+}
+
+.btn-dark {
+    --bs-btn-color: var(--dark-invert);
+    --bs-btn-bg: var(--dark-button-color);
+    --bs-btn-border-color: var(--dark-button-color);
+    --bs-btn-hover-color: var(--dark-invert);
+    --bs-btn-hover-bg: var(--dark-button-hover);
+    --bs-btn-hover-border-color: var(--dark-button-hover);
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: var(--dark-button-click);
+    --bs-btn-active-border-color: var(--dark-button-hover);
+}
+
+.btn-dark .btn-icon {
+    fill: var(--dark-invert);
+}
+
+.icon {
+    fill: var(--text-color);
+}
+
+.text {
+    color: var(--text-color);
+}
