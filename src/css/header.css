@@ -3,6 +3,11 @@
     margin-bottom: 15px;
 }
 
+.header--main-dark {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .header--text {
     font-size: 15px;
 }
@@ -17,7 +22,15 @@
 
 .header--locale-disable, .header--locale-disable:hover
 {
-    color: #333333 !important;
+    color: #000 !important;
+    text-align: none;
+
+    border-radius: 8px;
+}
+
+.header--locale-disable-en,
+.header--locale-disable-en:hover {
+    color: #fff !important;
     text-align: none;
 
     border-radius: 8px;
@@ -33,6 +46,18 @@
 
 .header--locale-active:hover {
     color: #333333;
+    text-decoration: none;
+}
+
+.header--locale-active-en {
+    color: #a9a9a9;
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.header--locale-active-en:hover {
+    color: #ddd;
     text-decoration: none;
 }
 

@@ -4,8 +4,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>@@title — Creagoo</title>
-    <meta name="theme-color" content="#7ed6df">
     <link rel="icon" href="/img/logo/icon.ico" type="image/x-icon">
+
+    @@if(context.themeColor == "none") {
+        <meta name="theme-color" content="#fff">
+    }
+    @@if(context.themeColor != "none") {
+        <meta name="theme-color" content="@@themeColor">
+    }
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/index.css">

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../../parts/head.html', {
+"title": "Главная страница",
+"themeColor": "#111"
+})
+<link rel="stylesheet" href="css/main-page.css">
+
+<body>
+    @@include('../../parts/header-game.html', {
+        "activeItem": "games"
+    })
+    <main class="container">
+        <div class="text-center">
+            <h1>Babka On The Hunt: 2D Классика</h1>
+            <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-top: 5px">
+                <ul class="nav justify-content-center">
+                    <li><a class="nav-link nav--link-underline-active">Главная</a></li>
+                    <li><a href="#" class="nav-link nav--link-underline">Описание</a></li>
+                    <li><a href="#" class="nav-link nav--link-underline">Графика</a></li>
+                    <li><a href="#" class="nav-link nav--link-underline">Скачать</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    @@include('../../parts/footer.html', {
+
+    })
+</body>
+
+</html>
