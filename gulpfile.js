@@ -1,27 +1,20 @@
 var gulp = require('gulp');
-
 var htmlmin = require('gulp-htmlmin');
 var fileinclude = require('gulp-file-include');
 var replace = require('gulp-replace');
 var webpHtmlNoSvg = require('gulp-webp-html-nosvg');
-
 var cssmin = require('gulp-cssmin');
 var csso = require('gulp-csso');
 var concatCss = require('gulp-concat-css');
 var autoprefixer = require('gulp-autoprefixer');
-
 var uglify = require('gulp-uglify');
-
 var ttf2woff2 = require('gulp-ttf2woff2');
-
 var webp = require('gulp-webp');
 var imagemin = require('gulp-imagemin');
-
 var concat = require('gulp-concat');
-
 var sync = require('browser-sync').create();
 
-// use php
+// use php ...
 
 function html(done) {
     gulp.src('./src/**.html')
@@ -81,6 +74,9 @@ function javascript(done) {
         .pipe(gulp.src('./src/js/not_compress/**/*.js'))
         .pipe(gulp.dest('./dist/js'));
 
+    gulp.src('./src/_js/**/*.js')
+        .pipe(gulp.dest('./dist/js'));
+
     done();
 }
 
@@ -123,29 +119,26 @@ function getserve(done) {
     gulp.watch('./src/**/*.html', gulp.series(html)).on('change', sync.reload);
     gulp.watch('./src/img/**/*', gulp.series(images)).on('change', sync.reload);
     gulp.watch('./src/css/**/*', gulp.series(getcss)).on('change', sync.reload);
+    gulp.watch('./src/**/*.css', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/js/**/*.js', gulp.series(javascript)).on('change', sync.reload);
+    gulp.watch('./src/**/*.js', gulp.series(javascript)).on('change', sync.reload);
     gulp.watch('./src/.htaccess', gulp.series(anotherFolders)).on('change', sync.reload);
 
     done();
 }
 
-// EN
-
-function copyForEN(done) {
-    gulp.src('./src/**/*')
-        .pipe(gulp.dest('./src_en'));
-
-    done();
-}
-
-gulp.task('default', gulp.series(
-    html,
-    getcss,
-    images,
-    javascript,
-    anotherFolders,
-    getserve
-));
+gulp.task('default',
+    gulp.series(
+        gulp.parallel(
+            html,
+            getcss,
+            images,
+            javascript,
+            anotherFolders
+        ),
+        gulp.series(getserve)
+    )
+);
 
 gulp.task('build', gulp.series(
     html,
@@ -172,8 +165,3 @@ gulp.task('serve', gulp.series(
     anotherFolders,
     getserve
 ));
-
-// EN
-gulp.task('en', gulp.series(
-    copyForEN
-))

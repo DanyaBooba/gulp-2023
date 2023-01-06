@@ -1,0 +1,45 @@
+.picture-top {
+    border-radius: 16px 16px 0 0;
+}
+
+.picture-bottom {
+    border-radius: 0 0 16px 16px;
+}
+
+.download--list
+{
+    margin: 0;
+    padding: 0;
+}
+
+.download--list-li
+{
+    border-left: .125rem #a9a9a9 solid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    transition: .3s;
+}
+
+.download--list-item
+{
+    color: #555;
+    text-decoration: none;
+
+    padding-left: 20px;
+    margin: 0;
+
+    transition: .3s;
+}
+
+.download--list-item:hover
+{
+    color: #333;
+    padding-left: 30px;
+}
+
+.download--list-li:hover
+{
+    border-left: .2rem #333 solid;
+}

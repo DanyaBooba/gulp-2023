@@ -4,26 +4,72 @@
 "title": "Главная страница",
 "themeColor": "#111"
 })
-<link rel="stylesheet" href="css/main-page.css">
-
+<link rel="stylesheet" href="/css/game-page.css">
 <body>
     @@include('../../parts/header-game.html', {
         "activeItem": "games"
     })
-    <main class="container">
-        <div class="text-center">
+    <main>
+        <div class="container text-center mb-3">
             <h1>Babka On The Hunt: 2D Классика</h1>
             <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-top: 5px">
                 <ul class="nav justify-content-center">
                     <li><a class="nav-link nav--link-underline-active">Главная</a></li>
-                    <li><a href="#" class="nav-link nav--link-underline">Описание</a></li>
+                    <li><a onClick="showText()" href="#" class="nav-link nav--link-underline">Описание</a></li>
                     <li><a href="#" class="nav-link nav--link-underline">Графика</a></li>
                     <li><a href="#" class="nav-link nav--link-underline">Скачать</a></li>
                 </ul>
             </div>
         </div>
-    </main>
 
+        <div id="media" style="margin-bottom: 100px">
+            <div class="container-fluid">
+                <img src="/@img/gallery/bothnew/screen1.jpg" class="img-fluid picture-top"
+                    alt="Игра Babka On The Hunt: 2D Классика">
+                <img src="/@img/gallery/bothnew/screen3.jpg" class="img-fluid" alt="Игра Babka On The Hunt: 2D Классика">
+                <img src="/@img/gallery/bothnew/screen5.jpg" class="img-fluid picture-bottom"
+                    alt="Игра Babka On The Hunt: 2D Классика">
+            </div>
+        </div>
+
+        <div id="text" style="margin-bottom: 100px">
+            <div class="container">
+                <p>
+                    Игра Бабушка На Охоте - прекрасный проект...
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div style="margin-bottom: 30px">
+                <h1>Скачать Babka On The Hunt: 2D Классика</h1>
+                <ul class="download--list">
+                    <li class="download--list-li">
+                        <a href="#" class="download--list-item fs-3">Google Play</a>
+                    </li>
+                    <li class="download--list-li">
+                        <a href="#" class="download--list-item fs-3">Windows</a>
+                    </li>
+                    <li class="download--list-li">
+                        <a href="#" class="download--list-item fs-3">macOS</a>
+                    </li>
+                    <li class="download--list-li">
+                        <a href="#" class="download--list-item fs-3">Linux</a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>Другие ссылки по игре</h2>
+            <ul>
+                <li>Играть онлайн</li>
+                <li>Скачать для Android</li>
+                <li>Страница на itch.io</li>
+                <li>Политика конфиденциальности</li>
+            </ul>
+        </div>
+
+    </main>
+    <script src="/js/game-page.js"></script>
     @@include('../../parts/footer.html', {
 
     })
