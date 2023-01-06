@@ -32,8 +32,9 @@ function html(done) {
             collapseWhitespace: true,
             removeComments: true
         }))
-        .pipe(gulp.dest('./dist'))
-        .pipe(gulp.src('./src/games/**/*.html'))
+        .pipe(gulp.dest('./dist'));
+
+    gulp.src('./src/games/**/*.html')
         .pipe(fileinclude())
         .pipe(replace(/@img\//g, 'img/'))
         .pipe(webpHtmlNoSvg())
@@ -42,6 +43,9 @@ function html(done) {
             removeComments: true
         }))
         .pipe(gulp.dest('./dist/games'));
+
+    gulp.src('./src/_noedithtml/*.html')
+        .pipe(gulp.dest('./dist/static'));
 
     done();
 }
@@ -125,6 +129,15 @@ function getserve(done) {
     done();
 }
 
+// EN
+
+function copyForEN(done) {
+    gulp.src('./src/**/*')
+        .pipe(gulp.dest('./src_en'));
+
+    done();
+}
+
 gulp.task('default', gulp.series(
     html,
     getcss,
@@ -159,3 +172,8 @@ gulp.task('serve', gulp.series(
     anotherFolders,
     getserve
 ));
+
+// EN
+gulp.task('en', gulp.series(
+    copyForEN
+))
