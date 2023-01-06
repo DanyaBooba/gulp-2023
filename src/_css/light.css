@@ -1,9 +1,13 @@
 :root {
     --bg-color: #ffffff;
-    --text-color: #000000;
+    --text-color: var(--text-color);
+
+    --text-hover: #a9a9a9;
     --text-hover-1: #555;
     --text-hover-2: #333;
     --text-hover-3: #111;
+    --text-hover-4: #ddd;
+    --text-hover-5: #777;
 
     --btn-light-color: #f4f4f4;
     --btn-light-hover: #d1d1d1;

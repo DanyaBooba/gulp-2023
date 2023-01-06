@@ -38,26 +38,26 @@
 
 .header--locale-active
 {
-    color: #a9a9a9;
+    color: var(--text-hover);
     text-decoration: none;
 
     border-radius: 8px;
 }
 
 .header--locale-active:hover {
-    color: #333333;
+    color: var(--text-hover-2);
     text-decoration: none;
 }
 
 .header--locale-active-en {
-    color: #a9a9a9;
+    color: var(--text-hover);
     text-decoration: none;
 
     border-radius: 8px;
 }
 
 .header--locale-active-en:hover {
-    color: #ddd;
+    color: var(--text-hover-4);
     text-decoration: none;
 }
 

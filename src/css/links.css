@@ -17,7 +17,7 @@
 }
 
 .link {
-    color: #a9a9a9;
+    color: var(--text-hover);
     text-decoration: none;
 
     transition: .3s;

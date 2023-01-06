@@ -7,7 +7,7 @@
 .footer--text-copyright
 {
     font-size: 13px;
-    color: #a9a9a9;
+    color: var(--text-hover);
 }
 
 .footer--text-head
@@ -17,7 +17,7 @@
 
 .footer--text-link
 {
-    color: #a9a9a9;
+    color: var(--text-hover);
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -29,5 +29,5 @@
 
 .footer--text-link:hover
 {
-    color: #333333;
+    color: var(--text-hover-2);
 }
