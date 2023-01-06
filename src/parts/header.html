@@ -10,10 +10,11 @@
             </a>
         </div>
         <div class="ms-auto justify-content-center">
-            <button onClick="ThemeChangeButton()" id="themechangebutton" type="button" class="btn btn-light header--locale">
-                <svg xmlns="http://www.w3.org/2000/svg" id="themechangebutton_icon" width="20" height="20" fill="currentColor"
-                    class="header--theme-icon" viewBox="0 0 16 16">
-                    <use xlink:href="/img/icons/themes.svg#auto" />
+            <button onClick="ThemeChangeButton()" type="button"
+                class="btn btn-light header--locale">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    fill="currentColor" class="header--theme-icon" viewBox="0 0 16 16">
+                    <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
                 </svg>
             </button>
             <button type="button" class="btn btn-light">
@@ -32,25 +33,26 @@
         <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-top: 5px">
             <ul class="nav justify-content-center">
                 @@if(context.activeItem == "games") {
-                    <li><a class="nav-link nav--link-active">Игры</a></li>
+                <li><a class="nav-link nav--link-active">Игры</a></li>
                 }
                 @@if(context.activeItem != "games") {
-                    <li><a href="/games" class="nav-link nav--link">Игры</a></li>
+                <li><a href="/games" class="nav-link nav--link">Игры</a></li>
                 }
                 <li><a href="#" class="nav-link nav--link">Новости</a></li>
                 @@if(context.activeItem == "gallery") {
-                    <li><a class="nav-link nav--link-active">Галерея</a></li>
+                <li><a class="nav-link nav--link-active">Галерея</a></li>
                 }
                 @@if(context.activeItem != "gallery") {
-                    <li><a href="/gallery.html" class="nav-link nav--link">Галерея</a></li>
+                <li><a href="/gallery.html" class="nav-link nav--link">Галерея</a></li>
                 }
                 @@if(context.activeItem == "about") {
-                    <li><a class="nav-link nav--link-active">Подробнее</a></li>
+                <li><a class="nav-link nav--link-active">Подробнее</a></li>
                 }
                 @@if(context.activeItem != "about") {
-                    <li><a href="/about.html" class="nav-link nav--link">Подробнее</a></li>
+                <li><a href="/about.html" class="nav-link nav--link">Подробнее</a></li>
                 }
-                <li><a href="/2022.html" class="nav-link bg-light nav--link text-dark" style="border-radius: 8px">2022</a></li>
+                <li><a href="/2022.html" class="nav-link bg-light nav--link text-dark"
+                        style="border-radius: 8px">2022</a></li>
             </ul>
         </div>
     </div>
