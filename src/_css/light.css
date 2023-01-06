@@ -1,21 +1,15 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --image-shadow: rgba(0, 0, 0, .15);
-    --link-nothover: #a9a9a9;
+    --text-hover-1: #555;
+    --text-hover-2: #333;
+    --text-hover-3: #111;
 
-    /* buttons */
-    /* --button-icon: #000000; */
-    --invert: #000000;
-    --button-color: #f4f4f4;
-    --button-hover: #d1d1d1;
-    --button-click: #979797;
+    --btn-light-color: #f4f4f4;
+    --btn-light-hover: #d1d1d1;
+    --btn-light-click: #979797;
 
-    --dark-invert: #ffffff;
-    --dark-button-color: #4a4a4a;
-    --dark-button-hover: #7e7e7e;
-    --dark-button-click: #212121;
-
-    --search-border: #d3d4d5;
-    --hover-half: #707070;
+    --btn-dark-color: #4a4a4a;
+    --btn-dark-hover: #7e7e7e;
+    --btn-dark-click: #212121;
 }
