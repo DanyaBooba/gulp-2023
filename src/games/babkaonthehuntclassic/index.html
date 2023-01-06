@@ -13,16 +13,23 @@
         <div class="container text-center mb-3">
             <h1>Babka On The Hunt: 2D Классика</h1>
             <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-top: 5px">
+                <a href="/games" class="link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 16 16" class="me-4">
+                        <path
+                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                    </svg>
+                </a>
                 <ul class="nav justify-content-center">
                     <li><a class="nav-link nav--link-underline-active">Главная</a></li>
                     <li><a onClick="showText()" href="#" class="nav-link nav--link-underline">Описание</a></li>
-                    <li><a href="#" class="nav-link nav--link-underline">Графика</a></li>
-                    <li><a href="#" class="nav-link nav--link-underline">Скачать</a></li>
+                    <li><a onClick="showMedia()" href="#" class="nav-link nav--link-underline">Графика</a></li>
+                    <li><a href="#download" class="nav-link nav--link-underline">Скачать</a></li>
                 </ul>
             </div>
         </div>
 
-        <div id="media" style="margin-bottom: 100px">
+        <div class="" id="divMedia" style="margin-bottom: 100px">
             <div class="container-fluid">
                 <img src="/@img/gallery/bothnew/screen1.jpg" class="img-fluid picture-top"
                     alt="Игра Babka On The Hunt: 2D Классика">
@@ -32,7 +39,7 @@
             </div>
         </div>
 
-        <div id="text" style="margin-bottom: 100px">
+        <div class="d-none" id="divText" style="margin-bottom: 100px">
             <div class="container">
                 <p>
                     Игра Бабушка На Охоте - прекрасный проект...
@@ -42,7 +49,7 @@
 
         <div class="container">
             <div style="margin-bottom: 30px">
-                <h1>Скачать Babka On The Hunt: 2D Классика</h1>
+                <h1 id="download">Скачать Babka On The Hunt: 2D Классика</h1>
                 <ul class="download--list">
                     <li class="download--list-li">
                         <a href="#" class="download--list-item d-flex flex-wrap align-items-center fs-3">
@@ -86,11 +93,27 @@
             </div>
 
             <h2>Другие ссылки по игре</h2>
-            <ul>
-                <li>Играть онлайн</li>
-                <li>Скачать для Android</li>
-                <li>Страница на itch.io</li>
-                <li>Политика конфиденциальности</li>
+            <ul class="mb-0 fs-4">
+                <li>
+                    <a href="#" class="link--underline">
+                        Играть онлайн
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link--underline">
+                        Скачать для Android
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link--underline">
+                        Страница на itch.io
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link--underline">
+                        Политика конфиденциальности
+                    </a>
+                </li>
             </ul>
         </div>
 
