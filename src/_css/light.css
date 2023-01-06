@@ -2,6 +2,7 @@
     --bg-color: #ffffff;
     --text-color: #000;
     --active: #fff;
+    --invert: #000;
 
     --text-hover: #a9a9a9;
     --text-hover-1: #555;
@@ -17,4 +18,7 @@
     --btn-dark-color: #4a4a4a;
     --btn-dark-hover: #7e7e7e;
     --btn-dark-click: #212121;
+
+    --bs-border-color: #ddd;
+    --bg-light: #f8f9fa;
 }

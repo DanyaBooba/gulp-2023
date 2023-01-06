@@ -22,7 +22,7 @@
 
 .header--locale-disable, .header--locale-disable:hover
 {
-    color: #000 !important;
+    color: var(--invert) !important;
     text-align: none;
 
     border-radius: 8px;
@@ -30,7 +30,7 @@
 
 .header--locale-disable-en,
 .header--locale-disable-en:hover {
-    color: #fff !important;
+    color: var(--text-color) !important;
     text-align: none;
 
     border-radius: 8px;

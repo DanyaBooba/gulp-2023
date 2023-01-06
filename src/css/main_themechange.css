@@ -62,3 +62,13 @@ i {
 .text {
     color: var(--text-color);
 }
+
+.bg-light
+{
+    background-color: var(--bg-light) !important;
+}
+
+.text-dark
+{
+    color: var(--text-color) !important;
+}
