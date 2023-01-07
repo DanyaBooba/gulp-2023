@@ -2,19 +2,19 @@
     <div class="container border-bottom"
         style="border-bottom: var(--bs-border-width) var(--bs-border-style) #555!important;">
         <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-bottom: 12px">
-            <ul class="nav me-auto">
+            <!-- <ul class="nav me-auto">
                 <li><a class="nav-link header--text header--locale header--locale-disable-en"
                         style="color: #fff !important; background-color: #353535">RU</a></li>
                 <li><a href="/en/" class="nav-link header--text header--locale header--locale-active-en"
                     style="background-color: #353535">EN</a>
                 </li>
-            </ul>
+            </ul> -->
             <div class="justify-content-center">
                 <a href="/">
                     <img src="/img/logo/w_creagoo.svg" width="280" alt="Логотип Creagoo">
                 </a>
             </div>
-            <div class="ms-auto justify-content-center">
+            <!-- <div class="ms-auto justify-content-center">
                 <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark-static header--locale">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="header--theme-icon"
                         viewBox="0 0 16 16" fill="white">
@@ -28,7 +28,7 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
-            </div>
+            </div> -->
         </div>
     </div>
 </header>
@@ -36,6 +36,13 @@
 <nav class="sticky-top shadow-sm nav--main" style="background-color: #262323; border-radius: 0 0 16px 16px">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <ul class="nav me-auto">
+                <li><a class="nav-link header--text header--locale header--locale-disable-en"
+                        style="color: #fff !important; background-color: #353535">RU</a></li>
+                <li><a href="/en/" class="nav-link header--text header--locale header--locale-active-en"
+                        style="background-color: #353535">EN</a>
+                </li>
+            </ul>
             <ul class="nav justify-content-center">
                 @@if(context.activeItem == "games") {
                 <li><a class="nav-link nav--link-active-en" style="color: #fff !important">Игры</a></li>
@@ -58,6 +65,57 @@
                 }
                 <li><a href="/2022.html" class="nav-link nav--link-en" style="border-radius: 8px; background-color: #353535">2022</a></li>
             </ul>
+            <div class="ms-auto justify-content-center">
+                <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark-static header--locale">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="header--theme-icon" viewBox="0 0 16 16"
+                        fill="white">
+                        <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-dark-static" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
+                    aria-controls="canvasprojects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon" viewBox="0 0 16 16"
+                        fill="white">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </nav>
+
+<div class="offcanvas offcanvas-bg offcanvas-end" tabindex="-1" id="canvasprojects"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Проекты класса yl:d</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex flex-wrap flex-column">
+            <div class="mb-2">
+                <a href="//it.dybka.ru"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    Все проекты yl:d
+                </a>
+            </div>
+            <div class="mb-2">
+                <a href="//id.creagoo.ru"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    Личный кабинет
+                </a>
+            </div>
+            <div class="mb-2">
+                <a href="//news.creagoo.ru"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    Читать новости
+                </a>
+            </div>
+            <div class="mb-2">
+                <a class="nav-link header--text bg-light fs-5 header--locale header--locale-disable py-3">
+                    <s>Разработка сайтов</s>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
