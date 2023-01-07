@@ -1,4 +1,5 @@
 let btnicon = document.getElementById('themechangebutton_icon');
+let themecolor = document.getElementById('themeColor');
 let light = document.getElementById('stylesheetlight');
 let dark = document.getElementById('stylesheetdark');
 
@@ -23,6 +24,8 @@ function GetDark() {
     localStorage.setItem('color-theme', 'dark');
     light.media = "not all";
     dark.media = "all";
+
+    console.log(themecolor);
 }
 
 function GetLight() {
@@ -30,6 +33,8 @@ function GetLight() {
     localStorage.setItem('color-theme', 'light');
     dark.media = "not all";
     light.media = "all";
+
+    console.log(themecolor);
 }
 
 function GetAuto() {
@@ -37,6 +42,8 @@ function GetAuto() {
     localStorage.removeItem('color-theme');
     light.media = "(prefers-color-scheme: light)";
     dark.media = "(prefers-color-scheme: dark)";
+
+    console.log(themecolor);
 }
 
 if (localStorage.getItem('color-theme') === 'dark') {
