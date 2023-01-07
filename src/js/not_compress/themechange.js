@@ -25,7 +25,7 @@ function GetDark() {
     light.media = "not all";
     dark.media = "all";
 
-    console.log(themecolor);
+    if(themecolor !== null) { console.log(themecolor.content); }
 }
 
 function GetLight() {
@@ -34,7 +34,7 @@ function GetLight() {
     dark.media = "not all";
     light.media = "all";
 
-    console.log(themecolor);
+    if(themecolor !== null) { console.log(themecolor.content); }
 }
 
 function GetAuto() {
@@ -43,7 +43,7 @@ function GetAuto() {
     light.media = "(prefers-color-scheme: light)";
     dark.media = "(prefers-color-scheme: dark)";
 
-    console.log(themecolor);
+    if(themecolor !== null) { console.log(themecolor.content); }
 }
 
 if (localStorage.getItem('color-theme') === 'dark') {
