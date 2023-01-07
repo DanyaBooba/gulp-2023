@@ -72,3 +72,7 @@ i {
 {
     color: var(--text-color) !important;
 }
+
+ul {
+    color: var(--text-color);
+}
