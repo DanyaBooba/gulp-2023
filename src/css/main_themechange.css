@@ -87,3 +87,7 @@ ul {
     --bs-btn-active-bg: #7B7B7B;
     --bs-btn-active-border-color: #565656;
 }
+
+.text-likehover {
+    color: var(--text-hover-1) !important;
+}
