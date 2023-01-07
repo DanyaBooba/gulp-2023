@@ -21,3 +21,7 @@
 .game--text {
     color: var(--text-hover-1);
 }
+
+.btn-close{
+    filter: var(--bs-btn-close-white-filter--me);
+}

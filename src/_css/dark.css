@@ -22,4 +22,7 @@
     --bs-border-color: #555;
     --bg-light: #353535;
     --bg-light-hover: #424242;
+
+    --bs-btn-close-color: #ddd;
+    --bs-btn-close-white-filter--me: invert(1) grayscale(100%) brightness(200%);
 }
