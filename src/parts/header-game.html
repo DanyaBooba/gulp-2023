@@ -1,8 +1,8 @@
 <header class="header--main-dark" style="background-color: #111">
-    <div class="container border-bottom">
+    <div class="container border-bottom" style="border-bottom: var(--bs-border-width) var(--bs-border-style) #555!important;">
         <div class="d-flex flex-wrap align-items-center justify-content-center" style="margin-bottom: 12px">
             <ul class="nav me-auto">
-                <li><a class="nav-link header--text header--locale bg-dark header--locale-disable-en">RU</a></li>
+                <li><a class="nav-link header--text header--locale bg-dark header--locale-disable-en" style="color: #fff !important">RU</a></li>
                 <li><a href="/en/" class="nav-link header--text bg-dark header--locale header--locale-active-en">EN</a></li>
             </ul>
             <div class="justify-content-center">
@@ -11,14 +11,14 @@
                 </a>
             </div>
             <div class="ms-auto justify-content-center">
-                <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark header--locale">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="header--theme-icon"
+                <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark-static header--locale">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="header--theme-icon icon"
                         viewBox="0 0 16 16">
-                        <use xlink:href="/img/icons/themes.svg#auto" />
+                        <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
                     </svg>
                 </button>
-                <button type="button" class="btn btn-dark">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="header--theme-icon"
+                <button type="button" class="btn btn-dark-static">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon"
                         viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
@@ -34,20 +34,20 @@
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <ul class="nav justify-content-center">
                 @@if(context.activeItem == "games") {
-                <li><a class="nav-link nav--link-active-en">Игры</a></li>
+                <li><a class="nav-link nav--link-active-en" style="color: #fff !important">Игры</a></li>
                 }
                 @@if(context.activeItem != "games") {
                 <li><a href="/games" class="nav-link nav--link-en">Игры</a></li>
                 }
                 <li><a href="#" class="nav-link nav--link-en">Новости</a></li>
                 @@if(context.activeItem == "gallery") {
-                <li><a class="nav-link nav--link-active-en">Галерея</a></li>
+                <li><a class="nav-link nav--link-active-en" style="color: #fff !important">Галерея</a></li>
                 }
                 @@if(context.activeItem != "gallery") {
                 <li><a href="/gallery.html" class="nav-link nav--link-en">Галерея</a></li>
                 }
                 @@if(context.activeItem == "about") {
-                <li><a class="nav-link nav--link-active-en">Подробнее</a></li>
+                <li><a class="nav-link nav--link-active-en" style="color: #fff !important">Подробнее</a></li>
                 }
                 @@if(context.activeItem != "about") {
                 <li><a href="/about.html" class="nav-link nav--link-en">Подробнее</a></li>
