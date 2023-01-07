@@ -119,6 +119,7 @@ function getserve(done) {
     gulp.watch('./src/**/*.html', gulp.series(html)).on('change', sync.reload);
     gulp.watch('./src/img/**/*', gulp.series(images)).on('change', sync.reload);
     gulp.watch('./src/css/**/*', gulp.series(getcss)).on('change', sync.reload);
+    gulp.watch('./src/_css/**/*', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/**/*.css', gulp.series(getcss)).on('change', sync.reload);
     gulp.watch('./src/js/**/*.js', gulp.series(javascript)).on('change', sync.reload);
     gulp.watch('./src/**/*.js', gulp.series(javascript)).on('change', sync.reload);
