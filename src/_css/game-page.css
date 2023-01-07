@@ -10,6 +10,10 @@
     border-radius: 16px;
 }
 
+.game--text {
+    color: var(--text-hover-1);
+}
+
 .download--list
 {
     margin: 0;
@@ -29,7 +33,7 @@
 
 .download--list-item
 {
-    color: #555;
+    color: var(--text-hover-1);
     text-decoration: none;
 
     padding-left: 20px;
@@ -40,11 +44,11 @@
 
 .download--list-item:hover
 {
-    color: #333;
+    color: var(--text-hover-2);
     padding-left: 30px;
 }
 
 .download--list-li:hover
 {
-    border-left: .2rem #333 solid;
+    border-left: .2rem var(--text-hover-2) solid;
 }
