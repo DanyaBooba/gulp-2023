@@ -5,7 +5,29 @@
 }
 
 @media(min-width: 994px) {
-    .header-adaptive-2 {
+    .header--adaptive-2 {
+        display: none !important;
+    }
+}
+
+@media(max-width: 587px) {
+    .header--adaptive-4 {
+        display: none !important;
+    }
+}
+@media(min-width: 586px) {
+    .header--adaptive-4-show {
+        display: none !important;
+    }
+}
+
+@media(max-width: 389px) {
+    .header--logo-pc {
+        display: none !important;
+    }
+}
+@media(min-width: 390px) {
+    .header--logo-mobile {
         display: none !important;
     }
 }
