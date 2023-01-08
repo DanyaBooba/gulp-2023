@@ -1,5 +1,8 @@
 <header class="container header--main">
     <div class="d-flex flex-wrap align-items-center justify-content-center">
+        <ul class="nav me-auto">
+            <li><a href="/en/" class="nav-link header--text bg-light header--locale header--locale-active">EN</a></li>
+        </ul>
         <div class="justify-content-center">
             <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" alt="Логотип Creagoo" width="280" viewBox="0 0 1105 169">
@@ -29,10 +32,33 @@
                 </svg>
             </a>
         </div>
+        <div class="ms-auto justify-content-center">
+            <!-- MOBILE  -->
+            <button type="button" class="btn btn-light header-adaptive-2"
+                data-bs-toggle="collapse" data-bs-target="#mobilemenu_full"
+                aria-expanded="false" aria-controls="mobilemenu_full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- MOBILE -->
+    <div class="collapse show mt-2" id="mobilemenu_full">
+        <div class="list-group container list-group-flush p-0">
+            <a href="#" class="list-group-item list-group-item-action">
+                Сменить тему
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Текущий язык: RU
+            </a>
+        </div>
     </div>
 </header>
 
-<nav class="nav-sticky bg-white border-bottom nav--main">
+<nav class="nav-sticky bg-white border-bottom header--adaptive-3 nav--main">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <ul class="nav me-auto">
@@ -90,7 +116,7 @@
         </div>
     </div>
     <!-- MOBILE -->
-    <div class="collapse show mt-2" id="mobilemenu">
+    <div class="collapse show mt-2 p-0" id="mobilemenu">
         <div class="list-group container list-group-flush">
             <a href="#" class="list-group-item list-group-item-action">
                 Сменить тему
