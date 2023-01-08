@@ -5,6 +5,14 @@
     margin-bottom: 60px;
 }
 
+@media(min-width: 994px) {
+    .nav-sticky {
+        top: 0;
+        position: sticky;
+        z-index: 1020;
+    }
+}
+
 .nav--link
 {
     color: var(--text-hover);

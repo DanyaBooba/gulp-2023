@@ -1,0 +1,5 @@
+@media(max-width: 773px) {
+    .header--adaptive-3 {
+        display: none !important;
+    }
+}

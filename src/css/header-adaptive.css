@@ -1,0 +1,11 @@
+@media(max-width: 993px) {
+    .header--adaptive-1 {
+        display: none !important;
+    }
+}
+
+@media(min-width: 994px) {
+    .header-adaptive-2 {
+        display: none !important;
+    }
+}

@@ -32,14 +32,14 @@
     </div>
 </header>
 
-<nav class="sticky-top bg-white border-bottom nav--main">
+<nav class="nav-sticky bg-white border-bottom nav--main">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <ul class="nav me-auto">
-                <li><a class="nav-link header--text header--locale bg-light header--locale-disable">RU</a></li>
+                <li><a class="nav-link header--text header--locale bg-light header--locale-disable header--adaptive-1">RU</a></li>
                 <li><a href="/en/" class="nav-link header--text bg-light header--locale header--locale-active">EN</a></li>
             </ul>
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-center header--adaptive-3">
                 @@if(context.activeItem == "games") {
                 <li><a class="nav-link nav--link-active">Игры</a></li>
                 }
@@ -63,13 +63,13 @@
                         style="border-radius: 8px">2022</a></li>
             </ul>
             <div class="ms-auto justify-content-center">
-                <button onClick="ThemeChangeButton()" type="button" class="btn btn-light header--locale">
+                <button onClick="ThemeChangeButton()" type="button" class="btn btn-light header--adaptive-1 header--locale">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="header--theme-icon icon"
                         viewBox="0 0 16 16">
                         <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
                     </svg>
                 </button>
-                <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
+                <button type="button" class="btn btn-light header--adaptive-1" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
                     aria-controls="canvasprojects">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon"
                         viewBox="0 0 16 16">
@@ -77,7 +77,27 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
+
+                <!-- MOBILE  -->
+                <button type="button" class="btn btn-light header-adaptive-2" data-bs-toggle="collapse" data-bs-target="#mobilemenu"
+                    aria-expanded="false" aria-controls="mobilemenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
             </div>
+        </div>
+    </div>
+    <!-- MOBILE -->
+    <div class="collapse show mt-2" id="mobilemenu">
+        <div class="list-group container list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+                Сменить тему
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                Текущий язык: RU
+            </a>
         </div>
     </div>
 </nav>
