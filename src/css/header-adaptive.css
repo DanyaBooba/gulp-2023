@@ -36,3 +36,9 @@
         display: none !important;
     }
 }
+
+@media(max-width: 773px) {
+    .header-dark--margin {
+        margin-bottom: 60px;
+    }
+}
