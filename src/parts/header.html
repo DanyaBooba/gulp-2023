@@ -39,7 +39,7 @@
                 </svg>
             </a>
         </div>
-        <div class="ms-auto justify-content-center">
+        <div class="ms-auto justify-content-center header--adaptive-4">
             <!-- MOBILE  -->
             <button type="button" class="btn btn-light header--adaptive-2"
                 data-bs-toggle="collapse" data-bs-target="#mobilemenu_full"
@@ -53,9 +53,9 @@
         </div>
     </div>
     <!-- MOBILE -->
-    <div class="collapse show mt-2" id="mobilemenu_full">
+    <div class="collapse show header--adaptive-4 mt-2" id="mobilemenu_full">
         <div class="list-group container list-group-flush p-0">
-            <a href="#" class="list-group-item list-group-item-action">
+            <a href="#" class="list-group-item list-group-item-action" onClick="ThemeChangeButton()" >
                 Сменить тему
             </a>
             <a href="#" class="list-group-item list-group-item-action">
@@ -102,7 +102,8 @@
                         <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
                     </svg>
                 </button>
-                <button type="button" class="btn btn-light header--adaptive-1" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
+                <button type="button" class="btn btn-light header--adaptive-1"
+                    data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
                     aria-controls="canvasprojects">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon"
                         viewBox="0 0 16 16">
@@ -112,7 +113,8 @@
                 </button>
 
                 <!-- MOBILE  -->
-                <button type="button" class="btn btn-light header--adaptive-2" data-bs-toggle="collapse" data-bs-target="#mobilemenu"
+                <button type="button" class="btn btn-light header--adaptive-2"
+                    data-bs-toggle="collapse" data-bs-target="#mobilemenu"
                     aria-expanded="false" aria-controls="mobilemenu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -122,7 +124,7 @@
             </div>
         </div>
     </div>
-    <!-- MOBILE -->
+    <!-- TABLET -->
     <div class="collapse show mt-2 p-0" id="mobilemenu">
         <div class="list-group container list-group-flush">
             <a href="#" class="list-group-item list-group-item-action">

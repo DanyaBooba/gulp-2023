@@ -3,3 +3,9 @@
         display: none !important;
     }
 }
+
+.list-group-item
+{
+    color: var(--text-color) !important;
+    background-color: var(--bg-color) !important;
+}

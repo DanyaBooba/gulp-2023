@@ -10,13 +10,8 @@
     }
 }
 
-@media(max-width: 587px) {
+@media(min-width: 774px) {
     .header--adaptive-4 {
-        display: none !important;
-    }
-}
-@media(min-width: 586px) {
-    .header--adaptive-4-show {
         display: none !important;
     }
 }
