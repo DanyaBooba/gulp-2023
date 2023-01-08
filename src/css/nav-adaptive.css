@@ -9,3 +9,8 @@
     color: var(--text-color) !important;
     background-color: var(--bg-color) !important;
 }
+
+.list-group-item-dark {
+    color: #fff !important;
+    background-color: #262323 !important;
+}

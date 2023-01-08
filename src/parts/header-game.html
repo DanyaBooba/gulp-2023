@@ -15,7 +15,7 @@
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center">
             <ul class="nav me-auto">
-                <li><a class="nav-link header--text header--locale header--locale-disable-en"
+                <li><a class="nav-link header--text header--locale header--locale-disable-en header--adaptive-1"
                         style="color: #fff !important; background-color: #353535">RU</a></li>
                 <li><a href="/en/" class="nav-link header--text header--locale header--locale-active-en"
                         style="background-color: #353535">EN</a>
@@ -44,13 +44,13 @@
                 <li><a href="/2022.html" class="nav-link nav--link-en" style="border-radius: 8px; background-color: #353535">2022</a></li>
             </ul>
             <div class="ms-auto justify-content-center">
-                <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark-static header--locale">
+                <button onClick="ThemeChangeButton()" type="button" class="btn btn-dark-static header--locale header--adaptive-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="header--theme-icon" viewBox="0 0 16 16"
                         fill="white">
                         <use id="themechangebutton_icon" xlink:href="/img/icons/themes.svg#auto" />
                     </svg>
                 </button>
-                <button type="button" class="btn btn-dark-static" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
+                <button type="button" class="btn btn-dark-static header--adaptive-1" data-bs-toggle="offcanvas" data-bs-target="#canvasprojects"
                     aria-controls="canvasprojects">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon" viewBox="0 0 16 16"
                         fill="white">
@@ -58,7 +58,26 @@
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </button>
+                <button type="button" class="btn btn-dark-static header--adaptive-2" data-bs-toggle="collapse"
+                    data-bs-target="#mobilemenu" aria-expanded="false" aria-controls="mobilemenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header--theme-icon" viewBox="0 0 16 16"
+                        fill="white">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
             </div>
+        </div>
+    </div>
+    <!-- TABLET -->
+    <div class="collapse mt-2 p-0" id="mobilemenu">
+        <div class="list-group container list-group-flush">
+            <a href="#" class="list-group-item-dark list-group-item list-group-item-action" onClick="ThemeChangeButton()">
+                Сменить тему
+            </a>
+            <a href="#" class="list-group-item-dark list-group-item list-group-item-action">
+                Текущий язык: RU
+            </a>
         </div>
     </div>
 </nav>
