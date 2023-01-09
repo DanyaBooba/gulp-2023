@@ -1,0 +1,30 @@
+@media(max-width: 767px) {
+    .ps-3--local {
+        padding-left: 0.75rem !important;
+    }
+}
+@media(min-width: 1399px) {
+    .ps-3--local {
+        margin-left: -20px;
+    }
+}
+@media(min-width:1199px) and (max-width: 1399px) {
+    .ps-3--local {
+        margin-left: -7px;
+    }
+}
+@media(max-width:1200px) and (min-width:768px) {
+    .ps-3--local {
+        padding-left: 0.75rem !important;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .game-block {
+        max-width: 350px;
+    }
+}
+
+/* links: bothnew, ttt, rps */
+/* text: both, cards */
