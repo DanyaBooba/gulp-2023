@@ -64,3 +64,9 @@
 {
     margin: 0px 10px 0px 10px;
 }
+
+@media(max-width: 773px) {
+    .header--main-mobile{
+        margin-bottom: 60px;
+    }
+}
