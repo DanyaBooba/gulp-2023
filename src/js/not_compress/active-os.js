@@ -9,17 +9,21 @@ if (ANDROID > -1) { GetAndroid(); }
 if (LINUX > -1) { GetLinux(); }
 
 function GetMacOS() {
-    console.log('macos');
+    let dwn = document.getElementById('downloadmacos');
+    if(dwn !== null) { dwn.classList.add('download--active') }
 }
 
 function GetWindows() {
-    console.log('windows');
+    let dwn = document.getElementById('downloadwindows');
+    if(dwn !== null) { dwn.classList.add('download--active') }
 }
 
 function GetAndroid() {
-    console.log('android');
+    let dwn = document.getElementById('downloadandroid');
+    if(dwn !== null) { dwn.classList.add('download--active') }
 }
 
 function GetLinux() {
-    console.log('linux');
+    let dwn = document.getElementById('downloadlinux');
+    if(dwn !== null) { dwn.classList.add('download--active') }
 }

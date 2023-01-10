@@ -52,3 +52,13 @@
 {
     border-left: .2rem var(--text-hover-2) solid;
 }
+
+.download--active
+{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+
+    background-color: rgba(1,1,1, .125);
+    border-top-right-radius: 8px;
+    border-end-end-radius: 8px;
+}
