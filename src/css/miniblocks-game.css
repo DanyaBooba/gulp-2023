@@ -3,16 +3,19 @@
         padding-left: 0.75rem !important;
     }
 }
+
 @media(min-width: 1399px) {
     .ps-3--local {
         margin-left: -20px;
     }
 }
+
 @media(min-width:1199px) and (max-width: 1399px) {
     .ps-3--local {
         margin-left: -7px;
     }
 }
+
 @media(max-width:1200px) and (min-width:768px) {
     .ps-3--local {
         padding-left: 0.75rem !important;
@@ -26,5 +29,32 @@
     }
 }
 
-/* links: bothnew, ttt, rps */
-/* text: both, cards */
+@media(max-width: 1199px) and (min-width: 992px) {
+    .link-bothnew {
+        display: none !important;
+    }
+
+    .link-ttt {
+        display: none !important;
+    }
+
+    .link-rps {
+        display: none !important;
+    }
+
+    .text-both {
+        display: none !important;
+    }
+
+    .text-cards {
+        display: none !important;
+    }
+
+    .cards-mb {
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+.cards-mb {
+    margin-bottom: 0rem;
+}
