@@ -40,6 +40,13 @@ function html(done) {
     gulp.src('./src/_noedithtml/*.html')
         .pipe(gulp.dest('./dist/static'));
 
+    gulp.src('./src/manifest.json')
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.src('./src/sitemap.xml'))
+        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.src('./src/robots.txt'))
+        .pipe(gulp.dest('./dist'));
+
     done();
 }
 
