@@ -68,7 +68,7 @@
                 class="list-group-item-dark list-group-item list-group-item-action">
                 Галерея
             </a>
-            <a href="//news.creagoo.ru/creagoo" aria-label="Читать новости Creagoo"
+            <a href="//news.dybka.ru" aria-label="Читать новости Creagoo"
                 class="list-group-item-dark list-group-item list-group-item-action">
                 Новости
             </a>
@@ -76,10 +76,10 @@
                 class="list-group-item-dark list-group-item list-group-item-action">
                 Подробнее
             </a>
-            <a href="/2022.html" aria-label="Итоги 2022 года"
+            <!-- <a href="/2022.html" aria-label="Итоги 2022 года"
                 class="list-group-item-dark list-group-item list-group-item-action">
                 2022
-            </a>
+            </a> -->
 
             <button aria-label="Переключить светлую и темную тему"
             class="list-group-item-dark list-group-item list-group-item-action" onClick="ThemeChangeButton()">
@@ -117,7 +117,7 @@
                 @@if(context.activeItem != "games") {
                 <li><a href="/games" class="nav-link nav--link-en" aria-label="Смотреть игры Creagoo">Игры</a></li>
                 }
-                <li><a href="//news.creagoo.ru/creagoo" aria-label="Читать новости Creagoo"
+                <li><a href="//news.dybka.ru" aria-label="Читать новости Creagoo"
                     class="nav-link nav--link-en">Новости</a></li>
                 @@if(context.activeItem == "gallery") {
                 <li><a class="nav-link nav--link-active-en" aria-label="Галерея проектов Creagoo"
@@ -135,8 +135,8 @@
                 <li><a href="/about.html" aria-label="Подробнее о Creagoo"
                     class="nav-link nav--link-en">Подробнее</a></li>
                 }
-                <li><a href="/2022.html" class="nav-link nav--link-en" aria-label="Итоги 2022 года"
-                    style="border-radius: 8px; background-color: #353535">2022</a></li>
+                <!-- <li><a href="/2022.html" class="nav-link nav--link-en" aria-label="Итоги 2022 года"
+                    style="border-radius: 8px; background-color: #353535">2022</a></li> -->
             </ul>
             <div class="ms-auto justify-content-center">
                 <button onClick="ThemeChangeButton()" type="button" aria-label="Переключить светлую и темную тему"
@@ -184,16 +184,16 @@
 <div class="offcanvas offcanvas-bg offcanvas-end" tabindex="-1" id="canvasprojects"
     aria-labelledby="projLabel">
     <div class="offcanvas-header">
-        <p class="offcanvas-title mb-0 h5" id="projLabel">Проекты класса yl:d</p>
+        <p class="offcanvas-title mb-0 h5" id="projLabel">Проект от dybka.ru</p>
         <button type="button" class="btn-close"
             data-bs-dismiss="offcanvas" aria-label="Кнопка закрыть"></button>
     </div>
     <div class="offcanvas-body">
         <div class="d-flex flex-wrap flex-column">
             <div class="mb-2">
-                <a href="//it.dybka.ru" aria-label="Смотреть все проекты ylid"
+                <a href="//it.dybka.ru" aria-label="Проекты dybka.ru"
                     class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
-                    Все проекты yl:d
+                    Все проекты
                 </a>
             </div>
             <div class="mb-2">
@@ -203,15 +203,34 @@
                 </a>
             </div>
             <div class="mb-2">
-                <a href="//news.creagoo.ru" aria-label="Читать новости спешиал"
+                <a href="//news.dybka.ru" aria-label="Читать новости спешиал"
                     class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
                     Читать новости
                 </a>
             </div>
             <div class="mb-2">
-                <div class="nav-link header--text bg-light fs-5 header--locale header--locale-disable py-3">
-                    <s>Разработка сайтов</s>
-                </div>
+                <a href="//dybka.ru" aria-label="Читать новости спешиал"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    dybka.ru
+                </a>
+            </div>
+            <div class="mb-2">
+                <a href="//vr.creagoo.ru" aria-label="Читать новости спешиал"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    Умный город
+                </a>
+            </div>
+            <div class="mb-2">
+                <a href="//creagoo.ru" aria-label="Читать новости спешиал"
+                    class="nav-link header--text bg-light fs-5 header--locale header--locale-active py-3">
+                    Сайт Creagoo
+                </a>
+            </div>
+            <div class="mb-2">
+                <a href="//it.dybka.ru" aria-label="Читать новости спешиал"
+                    class="nav-link fs-5 header--locale header--locale-active pt-1">
+                    Подробнее
+                </a>
             </div>
         </div>
     </div>
